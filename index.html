@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="pollwebicon.png" type="x=icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pollweb</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="area">
+        <ul class="squares">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="navbar">
+        <img src="logo.png" alt="logo" class="logo" />
+        <ul>
+          <li>
+            <a href="about.html">About us</a>
+          </li>
+          <li>
+            <a href="SERVICES.HTML">Services</a>
+          </li>
+          <li>
+            <a href="Enterprise.html">Enterprise</a>
+          </li>
+          <li>
+            <a href="HELPCENTRE.HTML">Help Centre</a>
+          </li>
+          <li>
+            <a onclick="doLogout()" id="home_user_email"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <h1>MAKE POLL WITH US</h1>
+        <p>
+          Casting Voices, Igniting Conversations, Building Insights, and Uniting
+          Perspectives to Drive Change,
+          <br />Influence Decisions, and Shape the Future Together!
+        </p>
+        <div>
+          <a href="login"
+            ><button id="indexRegBtn" type="button"><span></span>REGISTER</button></a
+          >
+          <a href="poll1.html"
+            ><button type="button"><span></span>MAKE A POLL</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+
+      if(localStorage.getItem("email"))
+      {
+          document.querySelector("#indexRegBtn").style.display = "none";
+          document.querySelector("#home_user_email").innerHTML = localStorage.getItem("email");
+      }
+
+      function doLogout()
+      {
+        if(confirm("Are You Sure To Logout ?"))
+        {
+          localStorage.removeItem("email");
+          window.location.reload();
+        }
+      }
+
+    </script>
+
+
+  </body>
+</html>

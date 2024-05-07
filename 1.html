@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Polling</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <div id="poll-container">
+        <h1>Live Polling</h1>
+        <div id="question-container">
+            <label for="question">Question:</label>
+            <input type="text" id="question" placeholder="Enter your question">
+        </div>
+        <div id="options-container">
+            <label for="options">Options:</label>
+            <textarea id="options" placeholder="Enter options separated by commas"></textarea>
+        </div>
+        <button onclick="startPoll()">Start Poll</button>
+        <div id="poll-form" style="display: none;">
+            <h2 id="poll-question"></h2>
+            <div id="options-list"></div>
+            <button onclick="submitVote()">Submit Vote</button>
+        </div>
+        <div id="results-container" style="display: none;">
+            <h2>Results</h2>
+            <div id="results-chart"></div>
+        </div>
+    </div>
+    <script src="3.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollWeb Services</title>
+    <link rel="icon" href="pollwebicon.png" type="x=icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(BGPOLL.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+        }
+
+        header {
+            
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        .service-item {
+            margin-bottom: 20px;
+        }
+
+        .service-item h2 {
+            color: rgb(16,36,71);
+        }
+
+        .service-item p {
+            color: #060606;
+        }
+        .squares {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+.squares li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 8s linear infinite;
+    bottom: -150px;
+}
+
+.squares li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(2) {
+    left: 10%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.squares li:nth-child(3) {
+    left: 70%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+}
+
+.squares li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.squares li:nth-child(5) {
+    left: 65%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 4s;
+}
+
+.squares li:nth-child(8) {
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 2s;
+    animation-duration: 30s;
+}
+
+.squares li:nth-child(9) {
+    left: 20%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+    animation-duration: 25s;
+}
+
+.squares li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.squares li:nth-child(11) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(12) {
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 2s;
+    animation-duration: 7s;
+}
+
+.squares li:nth-child(13) {
+    left: 20%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.squares li:nth-child(14) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome&nbsp;to&nbsp;PollWeb</h1>
+        <p>Your Trusted Polling Service Provider</p>
+    </header>
+    <div class="area">
+        <ul class="squares">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="container">
+    
+
+        <div class="service-item">
+            <h2>Poll Creation</h2>
+            <p>Easily create polls and gather opinions from your audience. Whether it's for market research, decision-making, or fun, PollWeb provides the tools you need to create engaging polls and view real-time results.</p>
+        </div>
+
+        <div class="service-item">
+            <h2>Data Analysis</h2>
+            <p>Gain insights from the data you collect. Our advanced analytics tools help you analyze survey and poll responses, generate reports, and make informed decisions based on the data you've gathered.</p>
+        </div>
+
+        <div class="service-item">
+            <h2>User Support</h2>
+            <p>Our dedicated support team is here to assist you every step of the way. If you have questions, encounter issues, or need guidance on using PollWeb, we're just a message away to provide you with the help you need.</p>
+        </div>
+        <p>Key features of Pollweb include:</p>
+        <ul>
+            <li>Easy-to-create polls and surveys</li>
+            <li>Customizable poll options</li>
+            <li>Real-time polling results</li>
+            <li>Secure and anonymous voting</li>
+            <li>Integration options for websites and social media</li>
+            <li>Easy to share your Poll results</li>
+        </ul>
+        <footer>
+            <p>&copy; 2023 Pollweb</p>
+        </footer>
+    </div>
+</body>
+</html>

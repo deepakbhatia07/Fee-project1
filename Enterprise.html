@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollWeb Services</title>
+    <link rel="icon" href="pollwebicon.png" type="x=icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(BGPOLL.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+        }
+
+        header {
+            
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        p {
+            line-height: 1;
+        }
+        .collabrating {
+            margin-bottom: 20px;
+        }
+        .share-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.share-list a {
+  border-radius: 100px;
+  width: 45px;
+  height: 45px;
+  padding: 7px;
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  
+
+}
+img{
+    height: 30px;
+    width: 30px;
+}
+a.fb-h { background: #3B5998; }
+a.tw-h { background: #00acee; }
+a.li-h { background: #0077B5; }
+a.Wh-h { background: #069608; }
+a.re-h { background: #FF5700; }
+a.In-h { background: #88867e }
+a.pi-h { background: #c8232c; }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.share-buttons-container {
+  display: flex;
+  align-items: center;
+ 
+}
+.squares {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.squares li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 8s linear infinite;
+    bottom: -150px;
+}
+
+.squares li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(2) {
+    left: 10%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.squares li:nth-child(3) {
+    left: 70%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+}
+
+.squares li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.squares li:nth-child(5) {
+    left: 65%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 4s;
+}
+
+.squares li:nth-child(8) {
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 2s;
+    animation-duration: 30s;
+}
+
+.squares li:nth-child(9) {
+    left: 20%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+    animation-duration: 25s;
+}
+
+.squares li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.squares li:nth-child(11) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(12) {
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 2s;
+    animation-duration: 7s;
+}
+
+.squares li:nth-child(13) {
+    left: 20%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.squares li:nth-child(14) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome&nbsp;to&nbsp;PollWeb</h1>
+        <p> ~ Our Collaborating Partner's ~</p>
+    </header>
+    <div class="area">
+        <ul class="squares">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="Collaborating">
+            <h2>Our Enterprises:</h2><br> <br>
+            <div class="Bussiness"><b>  Bussiness Enterprises:</b></div> 
+    <br>
+            <div class="answer">  They endeavor us where the primary motive is profit and not mere employment for oneself and others.They handle the activity of providing goods and services involving financial and commercial and industrial aspects.Then, they sell it to consumers to satisfy their needs and wants.</div>
+            <br>
+            <div class="share-buttons-container">
+                <div class="share-list">
+                    <!-- LINKEDIN -->
+                    <a class="li-h" onclick="return lbs_click()"  target="_blank">
+                    <img src="https://img.icons8.com/material-rounded/96/000000/linkedin.png">
+                    </a>
+                
+                    <!-- REDDIT -->
+                    <a class="re-h" onclick="return rbs_click()" target="_blank">
+                    <img src="https://img.icons8.com/ios-glyphs/90/000000/reddit.png">
+                    </a>
+                
+                    <!-- PINTEREST -->
+                    <a data-pin-do="buttonPin" data-pin-config="none" class="pi-h" onclick="return pbs_click()" target="_blank">
+                    <img src="https://img.icons8.com/ios-glyphs/90/000000/pinterest.png">
+                    </a>
+                </div>
+                </div>
+                <div class="Social"><b>Social Enterprises:</b></div> 
+                <br>
+                        <div class="answer">These Social enterprises provide our services to individuals and groups in the community.They seek to maximize profits while maximizing benefits to society and the environment, and the profits are principally used to fund social programs.
+                        </div>
+                        <br>    
+                        <div class="share-buttons-container">
+                            <div class="share-list">
+                                    <!-- FACEBOOK -->
+                                <a class="fb-h" onclick="return fbs_click()" target="_blank">
+                                <img src="https://img.icons8.com/material-rounded/96/000000/facebook-f.png">
+                                </a>
+
+                                    <!-- TWITTER -->
+                                <a class="tw-h" onclick="return tbs_click()"  target="_blank">
+                                <img src="https://img.icons8.com/material-rounded/96/000000/twitter-squared.png">
+                                </a>
+                                <!-- LINKEDIN -->
+                                <a class="li-h" onclick="return lbs_click()"  target="_blank">
+                                <img src="https://img.icons8.com/material-rounded/96/000000/linkedin.png">
+                                </a>
+                                <!-- Whatsapp -->
+                                <a class="Wh-h" onclick="return lbs_click()"  target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png">
+                        </a>
+                
+                                <!-- REDDIT -->
+                                <a class="re-h" onclick="return rbs_click()" target="_blank">
+                                <img src="https://img.icons8.com/ios-glyphs/90/000000/reddit.png">
+                                </a>
+                            
+                                <!-- Instagram -->
+                                <a class="In-h" onclick="return rbs_click()" target="_blank">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg">
+                                    </a>
+                                    
+                                <!-- PINTEREST -->
+                                <a data-pin-do="buttonPin" data-pin-config="none" class="pi-h" onclick="return pbs_click()" target="_blank">
+                                <img src="https://img.icons8.com/ios-glyphs/90/000000/pinterest.png">
+                                </a>
+                            </div>
+                            </div>
+
+
+      
+        <footer>
+            <p>&copy; 2023 Pollweb</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pollweb</title>
+    <link rel="icon" href="pollwebicon.png" type="x=icon">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <img src="logo.png" alt="logo" class="logo" />
+        <ul>
+          <li>
+            <a href="about.html">About us</a>
+          </li>
+          <li>
+            <a href="SERVICES.HTML">Services</a>
+          </li>
+          <li>
+            <a href="Enterprise.html">Enterprise</a>
+          </li>
+          <li>
+            <a href="HELPCENTRE.HTML">Help Centre</a>
+          </li>
+        </ul>
+      </div>
+      <div id="poll-container">
+        <h1>Live Polling:</h1>
+        <br />
+        <div id="question-container">
+          <label for="question">Question:</label>
+          <input type="text" id="question" placeholder="Enter your question" />
+        </div>
+        <div id="options-container">
+          <label for="options">Options:</label>
+          <textarea
+            id="options"
+            placeholder="Enter options separated by commas"
+          ></textarea>
+        </div>
+        <button onclick="startPoll()">Start Poll</button>
+        <br />
+        <div id="poll-form" style="display: none">
+          <h2 id="poll-question"></h2>
+          <div id="options-list"></div>
+          <br />
+          <button onclick="submitVote()">Submit Vote</button>
+        </div>
+        <div id="results-container" style="display: none">
+          <h2>Results:</h2>
+          <br />
+          <div id="results-chart"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script1.js"></script>
+  </body>
+</html>
